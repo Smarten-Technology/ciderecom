@@ -1,0 +1,248 @@
+.topfooter_left {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cider_topfooter .footer_items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.cider_topfooter .footer_items a {
+    text-decoration: none;
+    color: #333;
+}
+.cider_topfooter .footer_items a:hover {
+    text-decoration: underline;
+}
+
+.next_footer_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.middle_footer {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 400px;
+}
+
+@media screen and (max-width:992px) {
+    .middle_footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .last_footer_item {
+        padding-left: 14px !important;
+    }
+}
+
+.footer_items_btn {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer_items_btn button {
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 20px;
+}
+
+.footer_items_btn button svg {
+    height: 25px !important;
+    margin-right: 6px;
+    vertical-align: top;
+}
+
+.last_footer {
+    padding-left: 4%;
+}
+ .register_email {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+ .register_email .input-group {
+    border-radius: 0;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.register_email .input-group input {
+    border-radius: 0;
+    border: 1px solid black;
+    font-size: 12px;
+    max-width: 300px;
+}
+.register_email .input-group input:focus {
+    box-shadow: none;
+}
+
+.register_email .input-group button.btn {
+    border-radius: 0;
+}
+
+ .register_email label.form-check-label {
+    font-size: 12px;
+}
+
+ .register_email label.form-check-label a {
+    color: #111;
+    font-weight: 500;
+}
+
+ .footer_follow_us .footer_social_links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ .footer_follow_us .footer_social_links a svg {
+    color: #333;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+
+/* lower footer */
+.cider_lowerfooter {
+    border-top: 1px solid gray;
+    padding: 28px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer_payment_item {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+.footer_payment_item img {
+    height: 20px;
+}
+
+.footer_policy_terms {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 14px;
+}
+
+.footer_policy_terms a {
+    color: #444;
+    text-decoration: none;
+}
+
+.footer_policy_terms a:hover {
+    text-decoration: underline;
+}
+
+.tooltip.bs-tooltip-auto.fade.show {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.tooltip.bs-tooltip-auto.fade.show .tooltip-inner {
+    background-image: url(/images/mcLogo.png);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+}
+
+
+
+.bottom_fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    background: white;
+    padding: 5px 20px;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, .2);
+    z-index: 999;
+    background: white !important;
+}
+
+.bottom_fixed .button_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bottom_fixed .button_nav .shipping_refunds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 14px;
+}
+
+.bottom_fixed .button_nav .shipping_refunds a {
+    text-decoration: none;
+    color: #333;
+}
+
+.bottom_fixed .button_nav .footer_items_btn {
+    position: relative;
+}
+
+.bottom_fixed .button_nav .footer_items_btn button {
+    border-radius: 20px;
+}
+
+.bottom_fixed .button_nav .footer_items_btn button.tigger_modal {
+    border: .8px solid black;
+    border-radius: 50%;
+    padding: 2px 8px;
+    height: 30px;
+    align-content: center;
+    align-self: center;
+}
+
+.bottom_fixed .button_nav .footer_items_btn button.tigger_modal i {
+    align-self: center;
+}
+
+@media screen and (max-width:786px) {
+    .bottom_fixed .footer_items_btn button[data-bs-toggle="tooltip"]{
+        display: none;
+    }
+  
+    
+}
+
+.modal-backdrop.show {
+    position: inherit;
+}
+
+.modal-fullscreen {
+    height: fit-content;
+    padding-bottom: 0 !important;
+}
+.modal-body{
+    padding-bottom: 0 !important;
+}
+
+
+#bottomNavModal {
+    align-content: end;
+}

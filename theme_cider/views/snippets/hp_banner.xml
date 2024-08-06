@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="hp_banner" name="banner">
+        <section>
+            <div class="banner_one d-sm-block d-none">
+                <a href="/"><img src="/theme_cider/static/src/images/homeone.jpeg" alt="" /></a>
+            </div>
+            <div class="mobile_banner_one  d-sm-none d-block">
+                <a href="/"><img src="/theme_cider/static/src/images/homepage/gallery/tiny-image-1721892282000-rmrh2p.jpeg" alt="" /></a>
+            </div>
+        </section>
+    </template>
+</odoo>

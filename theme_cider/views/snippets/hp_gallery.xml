@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="gallery" name="cider homepage">
+        <section>
+            <div class="cider_home_gallery py-5">
+              <div class="gallery_header">
+               <h3 class="text-center mb-3"><a href="">GET THE LOOK</a></h3>
+                <a href=""><span>See all</span></a>
+              </div>
+             <div class="row g-0">
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery01.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery02.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery03.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery04.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery05.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery06.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery07.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery08.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery09.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery10.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery11.webp" alt="" /></a>
+                </div>
+              </div>
+              <div class=" col-md-3 col-6">
+                <div class="image_item">
+                <a href="">  <img src="/theme_cider/static/src/images/homepage/gallery/gallery12.webp" alt="" /></a>
+                </div>
+              </div>
+             
+             </div>
+
+            </div>
+          </section>
+    </template>
+</odoo>

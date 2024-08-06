@@ -1,0 +1,450 @@
+.ciderheader_two {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav.navbar {
+    position: relative;
+}
+
+main {
+    position: relative;
+    opacity: 1;
+    background-color: white;
+}
+
+/* pre header promo */
+header .pre_header {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    background: #000;
+
+}
+
+header .pre_header h6 {
+    color: white;
+    padding: 10px;
+}
+
+header .pre_header_hbtn {
+    position: absolute;
+    top: 8px;
+    right: 1%;
+}
+
+.pre_header_hbtn i {
+    color: white;
+}
+
+
+/* top header */
+header .topheader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+    position: relative;
+}
+
+.topheader.scroll-up {
+    padding: 0px 0px;
+    height: 0 !important;
+    transform: translateY(-100px);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 5);
+}
+
+.topheader.scroll-down {
+    overflow: hidden;
+    padding: 10px 10px;
+    height: fit-content;
+    transform: translateY(0);
+    transition: all .3s ease-out;
+
+}
+
+header .topheader .navbar-brand,
+header .navbar-brand.logo .logo_img {
+    margin-right: 0;
+}
+
+header .topheader .left_icons,
+header .right_icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+header .topheader .left_icons {
+    padding-left: 20px;
+    padding-right: 167px;
+    min-width: 20%;
+    position: relative;
+}
+
+header .topheader .left_icons>a {
+    position: relative;
+}
+
+header .topheader .left_icons a,
+header .right_icons a {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+header .topheader .left_icons a svg,
+header .right_icons a svg {
+    width: 100%;
+    height: 100%;
+}
+
+header .topheader .right_icons form {
+    position: relative;
+    overflow: hidden;
+}
+
+header .topheader .left_icons a,
+header form input[type="button"] {
+    border-radius: 0;
+    background: transparent;
+}
+
+header .form-control[readonly] {
+    background-color: white !important;
+}
+
+header .topheader .left_icons a,
+header form input[type="button"]:focus {
+    box-shadow: none;
+}
+
+header .topheader .right_icons form button[type="button"] {
+    position: absolute;
+    right: 8%;
+    top: 0;
+    border: none;
+    border: 0;
+    height: 90%;
+    z-index: 0;
+    background: transparent;
+    border-radius: 0;
+}
+
+header .topheader .right_icons form input {
+    width: 180px;
+}
+
+header .topheader .right_icons form button[type="submit"] {
+    position: absolute;
+    top: 7px;
+    right: 9%;
+    border: none;
+    background: transparent;
+}
+
+header .topheader .right_icons .for_search_nav {
+    width: 160px;
+    min-width: 100px;
+    max-width: 200px;
+    background-color: whitesmoke;
+    border: .5px solid transparent;
+}
+header .topheader .right_icons .for_search_nav:hover {
+
+    border: .5px solid black;
+}
+
+header .topheader .right_icons .for_search_nav li::marker {
+    content: " ";
+    position: absolute;
+}
+
+header .topheader .right_icons .for_search_nav li {
+    position: relative;
+    height: 32px !important;
+}
+
+header .topheader .right_icons .for_search_nav li a {
+    width: 160px;
+    min-width: 100px;
+    max-width: 200px;
+    border-radius: 0px !important;
+    position: relative;
+    height: 32px !important;
+    background-color: transparent;
+}
+
+header .topheader .right_icons .for_search_nav li a i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+}
+
+
+
+header .topheader .right_icons .wishlist_icon {
+    width: 22px;
+    position: relative;
+}
+
+header .topheader .right_icons .wishlist_icon .my_wish_quantity {
+    position: absolute;
+}
+
+header .topheader .right_icons .o_wsale_my_wish::marker {
+    content: " ";
+    position: absolute;
+
+}
+
+header .topheader .right_icons .header_cart_icon .cart_icon {
+    height: fit-content;
+}
+
+header .topheader .right_icons .header_cart_icon .cart_icon svg {
+    /* height: 75%;
+    width: 75%;    */
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+header .topheader .right_icons .o_wsale_my_cart {
+    position: relative;
+}
+
+header .topheader .right_icons .o_wsale_my_cart::marker {
+    position: absolute;
+    content: " ";
+}
+
+header .topheader .right_icons a.cart_notification {
+    position: relative;
+}
+
+header .topheader .right_icons a.cart_notification .header_cart_icon {
+    position: relative;
+}
+
+/* header .topheader .right_icons  a.cart_notification .my_cart_quantity{
+    position: absolute;
+    right: 5px;
+    top: 9px;
+    height: fit-content;
+} */
+
+
+.cider_nav {
+    position: relative;
+}
+
+.cider_nav .left_icons_down {
+    position: absolute;
+    left: 27px;
+    top: 12px;
+    display: flex;
+    gap: 20px;
+    transform: translateY(-200px);
+    transition: all .3s ease-in-out;
+}
+
+.cider_nav .left_icons_down svg {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.cider_nav .left_icons_down.slideup {
+    transform: translateY(0px) !important;
+    transition: all .3s ease-in-out;
+}
+
+header #ciderNavbar .cider_navbar_nav li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    position: relative;
+    cursor: pointer;
+}
+
+header .nav-item>.nav-link span {
+    font-weight: 700;
+    font-size: 16px;
+    color: #111;
+
+}
+
+header #ciderNavbar .cider_navbar_nav li a span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    clear: both;
+    height: 2px;
+    width: 90%;
+    background-color: #333;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    display: none;
+}
+
+header #ciderNavbar .cider_navbar_nav li a:hover span::after {
+    display: block;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.o_main_nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* search btn nav */
+
+
+ .modal-fullscreen{
+    height: fit-content !important;
+}
+#navSearch .modal-header {
+position: relative;
+border: none;
+
+}
+#navSearch .modal-header .btn-close {
+position: absolute;
+top: 40px;
+right: 3.5%;
+font-size: 30px;
+color: #111;
+opacity: 1;
+}
+#navSearch .modal-header .btn-close:focus{
+outline: none;
+box-shadow: none;
+}
+
+#navSearch .modal-header button {
+border: none;
+background: white;
+padding: 0 15px 0 0;
+}
+
+#navSearch .modal-header button svg {
+height: 25px;
+width: 25px;
+}
+
+#navSearch .modal-header input::placeholder {
+color: #a3a1a1;
+font-weight: 300;
+letter-spacing: 1px;
+}
+
+#navSearch .modal-header input[type="search"] {
+border: none;
+width: 100%;
+font-size: 30px;
+border-radius: 0;
+position: relative;
+}
+#navSearch .modal-header input[type="search"]:focus {
+box-shadow: none;
+}
+#navSearch .modal-header .hr_line {
+position: relative;
+}
+
+#navSearch .modal-header .hr_line::after {
+position: absolute;
+bottom: -10px;
+left: 0;
+content: "";
+display: block;
+width: 100%;
+height: 2px;
+background: black;
+}
+#navSearch  .recent_search svg{
+height: 14px;
+align-self: center;
+}
+#navSearch  .recent_search_item {
+border: .5px solid #999;
+padding: 4px 12px;
+}
+#navSearch   .recent_search_item:hover{
+border: .5px solid #222;
+
+}
+#navSearch  .recent_search_item a{
+text-decoration: none;
+color: #888;
+font-size: 14px;
+}
+#navSearch .recent_search_item:hover  a{
+color: #222;
+}
+#navSearch  span.cross{
+cursor: pointer;
+}
+#navSearch .nav_trending_items{
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+}
+#navSearch   .nav_trending_item{
+text-decoration: none;
+text-wrap: nowrap;
+height: fit-content;
+padding: 3px 8px;
+background: whitesmoke ;
+}
+#navSearch   .nav_trending_item span{
+color: #333;
+font-size: 14px;
+}
+#navSearch  .nav_trending_item:hover{
+background: rgb(224, 221, 221);
+} 
+
+/* nav search */
+
+.for_search_nav{
+    width: 100%;
+}
+.rounded-end-pill {
+    border-top-right-radius: 0rem !important;
+    border-bottom-right-radius: 0rem !important;
+}
+.rounded-start-pill {
+    border-bottom-left-radius: 0rem !important;
+    border-top-left-radius: 0rem !important;
+}
+.for_search_nav  li::marker {
+    content: " ";
+    position: absolute;
+
+}
+#navSearch .modal-header button {
+    border: none;
+    background: white;
+    padding: 0 15px 0 15px !important;
+}

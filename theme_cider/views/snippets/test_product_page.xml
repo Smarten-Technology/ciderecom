@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <template id="products_list_view1" inherit_id="website_sale.product">
+        <xpath expr="//div[@id='product_detail_main']" position="after">
+            <!-- <p>hello</p> -->
+        </xpath>
+  
+        <xpath expr="//div[@id='o_wsale_cta_wrapper']" position="before">
+            <div class="cider_product_btns mb-3">
+                <a type="button" class="btn sizeandmodalbtn" data-bs-toggle="modal"
+                    data-bs-target="#productSizeModel">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-person-standing-dress"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.5 12.25V12h1v3.25a.75.75 0 0 0 1.5 0V12h1l-1-5v-.215a.285.285 0 0 1 .56-.078l.793 2.777a.711.711 0 1 0 1.364-.405l-1.065-3.461A3 3 0 0 0 8.784 3.5H7.216a3 3 0 0 0-2.868 2.118L3.283 9.079a.711.711 0 1 0 1.365.405l.793-2.777a.285.285 0 0 1 .56.078V7l-1 5h1v3.25a.75.75 0 0 0 1.5 0Z" />
+                        </svg>
+                        <span>Size Guide &amp; Model Info</span>
+                    </div>
+                    <span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <a type="button" class="btn body_measurements" data-bs-toggle="modal"
+                    data-bs-target="#productbodymeasurement">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rulers" viewBox="0 0 16 16">
+                            <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1z"/>
+                          </svg>
+                        <span>Enter your Bust measurements for size recommendations.</span>
+                    </div>
+                    <span>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </span>
+                </a>
+            </div>
+            <!-- Modal product size modal -->
+            <div class="modal fade" id="productSizeModel" tabindex="-1"
+                aria-labelledby="productSizeModelLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable ">
+                    <div class="modal-content p-3">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="productSizeModelLabel">Sizing help</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="size_helping">
+                                <div class="container py-5">
+                                    <h6 class="mb-3">Modal Information</h6>
+                                    <div class="model_information mb-5">
+                                        <div class="m_details">
+                                            <div class="title">Modle</div>
+                                            <div class="m_content">
+                                                <img src="/theme_cider/static/src/images/flexfour.jpeg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="m_details">
+                                            <div class="title">Height</div>
+                                            <div class="m_content">
+                                                <span>172</span>
+                                            </div>
+                                        </div>
+                                        <div class="m_details">
+                                            <div class="title">Bust</div>
+                                            <div class="m_content">
+                                                <span>80</span>
+                                            </div>
+                                        </div>
+                                        <div class="m_details">
+                                            <div class="title">Waist</div>
+                                            <div class="m_content">
+                                                <span>61</span>
+                                            </div>
+                                        </div>
+                                        <div class="m_details">
+                                            <div class="title">Hips</div>
+                                            <div class="m_content">
+                                                <span>91</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fit_type p-2">
+                                        <h6 class="mb-3 p-2">Fit Type</h6>
+                                        <hr />
+                                        <div class="fit_type_name">
+                                            <span>Slim</span>
+                                            <span class="active">Regular</span>
+                                            <span>Oversized</span>
+                                        </div>
+                                    </div>
+                                    <div class="stretch p-2">
+                                        <h6 class="mb-3 p-2">Stretch</h6>
+                                        <hr />
+                                        <div class="stretch_name">
+                                            <span>Non</span>
+                                            <span>Slight</span>
+                                            <span>Medium</span>
+                                            <span class="active">High</span>
+                                        </div>
+                                    </div>
+                                    <div class="measurement-table py-5">
+                                        <ul class="nav nav-tabs" id="measurementTable" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="body-size-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#body-size-tab-pane" type="button" role="tab"
+                                                    aria-controls="body-size-tab-pane" aria-selected="true">Body Size</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="product-size-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#product-size-tab-pane" type="button" role="tab"
+                                                    aria-controls="product-size-tab-pane" aria-selected="false">Product Size</button>
+                                            </li>
+                                            <div class="for_button">
+                                                cm
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                                                  </div>
+                                                  inch
+                                            </div>
+                                        </ul>
+                                        <div class="tab-content" id="measurementTableContent">
+                                            <div class="tab-pane fade show active" id="body-size-tab-pane" role="tabpanel"
+                                                aria-labelledby="body-size-tab" tabindex="0">
+                                                <div class="container pt-5">
+                                                    <div class="body_size_content">
+                                                        <h5 class="mb-3">Body Size</h5>
+                                                        <div class="body_size_table">
+                                                            <table class="table text-center table-striped ">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Cider Size</th>
+                                                                        <th>EU Size</th>
+                                                                        <th>Bust</th>
+                                                                        <th>Waist</th>
+                                                                        <th>Hips</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>XXS</td>
+                                                                        <td>32</td>
+                                                                        <td>30.7-32.3</td>
+                                                                        <td>22.8-24.4</td>
+                                                                        <td>32.7-34.3</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>XS</td>
+                                                                        <td>34</td>
+                                                                        <td>32.3-33.9</td>
+                                                                        <td>24.4-26</td>
+                                                                        <td>34.3-35.8</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>S</td>
+                                                                        <td>36</td>
+                                                                        <td>33.9-35.4</td>
+                                                                        <td>26-27.6</td>
+                                                                        <td>35.8-37.4</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>M</td>
+                                                                        <td>38</td>
+                                                                        <td>35.8-37.4</td>
+                                                                        <td>28-29.5</td>
+                                                                        <td>37.8-39.4</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>L</td>
+                                                                        <td>40</td>
+                                                                        <td>37.8-39.4</td>
+                                                                        <td>29.9-31.9</td>
+                                                                        <td>39.8-41.3</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>XL</td>
+                                                                        <td>42</td>
+                                                                        <td>39.8-41.3</td>
+                                                                        <td>31.8-33.9</td>
+                                                                        <td>41.7-43.3</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="product-size-tab-pane" role="tabpanel"
+                                                aria-labelledby="product-size-tab" tabindex="0">
+                                                <div class="container pt-5">
+                                                    <div class="body_size_content">
+                                                        <h5 class="mb-3">Body Size</h5>
+                                                        <div class="body_size_table">
+                                                            <table class="table text-center table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Cider Size</th>
+                                                                        <th>EU Size</th>
+                                                                        <th>Waist</th>
+                                                                        <th>Hips</th>
+                                                                        <th>BottomLength</th>
+                                                                        <th>InseamLength</th>
+                                                                        <th>Thigh</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>XXS</td>
+                                                                        <td>32</td>
+                                                                        <td>321.7</td>
+                                                                        <td>48.0</td>
+                                                                        <td>39.8</td>
+                                                                        <td>28.3</td>
+                                                                        <td>28.1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>XS</td>
+                                                                        <td>34</td>
+                                                                        <td>23.2</td>
+                                                                        <td>49.6</td>
+                                                                        <td>40.2</td>
+                                                                        <td>28.5</td>
+                                                                        <td>29.0</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>S</td>
+                                                                        <td>36</td>
+                                                                        <td>24.8</td>
+                                                                        <td>51.2</td>
+                                                                        <td>40.6</td>
+                                                                        <td>28.7</td>
+                                                                        <td>29.9</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>M</td>
+                                                                        <td>38</td>
+                                                                        <td>26.8</td>
+                                                                        <td>53.1</td>
+                                                                        <td>40.9</td>
+                                                                        <td>28.9</td>
+                                                                        <td>31.0</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>L</td>
+                                                                        <td>40</td>
+                                                                        <td>28.7</td>
+                                                                        <td>55.1</td>
+                                                                        <td>41.3</td>
+                                                                        <td>29.0</td>
+                                                                        <td>32.1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>XL</td>
+                                                                        <td>42</td>
+                                                                        <td>30.7</td>
+                                                                        <td>57.1</td>
+                                                                        <td>41.7</td>
+                                                                        <td>29.1</td>
+                                                                        <td>33.2</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="h_info">
+                                           The national size comparison is for reference only, the specific size is still based on the actual size of the clothes.
+                                        </div>
+                                    </div>
+                                    <div class="measure_your_body">
+                                        <h6>Measure your Body</h6>
+                                        <div class="for_image py-3">
+                                            <img src="/theme_cider/static/src/images/body_measure.webp" alt="" />
+                                        </div>
+                                        <ol>
+                                            <li>Shoulder - Measure between the tips of both shoulders.</li>
+                                            <li>Bust - Measure the circumference over the fullest part of your bust.</li>
+                                            <li>Waist - Measure your waist at the thinnest place.</li>
+                                            <li>Hips - Measure the fullest part of your hips.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer"> Not sure which size to choose? Email us at <a
+                                href="hi@shopcider.com">hi@shopcider.com</a> and our styling experts
+                            will help you find the perfect size! </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal body-measurements -->
+            <div class="modal" id="productbodymeasurement" tabindex="-1"
+                aria-labelledby="productbodymeasurementLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content p-3">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="productbodymeasurementLabel">My
+                                Measurements</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal_measurement">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="mm_image sticky-top">
+                                                <img
+                                                    src="/theme_cider/static/src/images/bodystru.webp"
+                                                    alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="main-body">
+                                                <div class="switch-button mb-4">
+                                                    <span class="cm_kg_measurements">cm,kg</span>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input"
+                                                            type="checkbox" 
+                                                             />
+                                                    </div>
+                                                    <span class="inch_lbs_measurements">inch,lbs</span>
+                                                </div>
+                                                <div class="all_details_input">
+                                                    <div class="row ">
+                                                        <div class="col-6">
+                                                            <div class="mb-2">
+                                                                <label for="details_height"
+                                                                    class="form-label">HEIGHT</label>
+                                                                <input type="text"
+                                                                    class="form-control form-control-lg"
+                                                                    id="details_height"
+                                                                    aria-describedby="emailHelp"
+                                                                     />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-2">
+                                                                <label for="details_weight"
+                                                                    class="form-label"> WEIGHT</label>
+                                                                <input type="text"
+                                                                    class="form-control form-control-lg"
+                                                                    id="details_weight"
+                                                                    aria-describedby="emailHelp"
+                                                                   />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <hr class="my-2" />
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-2">
+                                                                <label for="details_shoulder"
+                                                                    class="form-label">1-SHOULDER</label>
+                                                                <input type="text"
+                                                                    class="form-control form-control-lg"
+                                                                    id="details_shoulder"
+                                                                    aria-describedby="emailHelp"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-2">
+                                                                <label for="details_bust"
+                                                                    class="form-label">2-BUST</label>
+                                                                <input type="text"
+                                                                    class="form-control form-control-lg"
+                                                                    id="details_bust"
+                                                                  />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-2">
+                                                                <label for="details_underbust"
+                                                                    class="form-label">3-UNDER BUST</label>
+                                                                <input type="text"
+                                                                    class="form-control form-control-lg"
+                                                                    id="details_underbust"
+                                                                    />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label class="mb-2">BRA SIZE</label>
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <select
+                                                                        class="form-select form-select-lg mb-3"
+                                                                        aria-label=".for_bust">
+                                                                        <option selected="selected">
+                                                                            bust</option>
+                                                                        <option value="1">30</option>
+                                                                        <option value="2">32</option>
+                                                                        <option value="3">34</option>
+                                                                    </select>
+
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <select
+                                                                        class="form-select form-select-lg mb-3"
+                                                                        aria-label=".for_cup">
+                                                                        <option selected="selected">
+                                                                            cup</option>
+                                                                        <option value="1">A</option>
+                                                                        <option value="2">B</option>
+                                                                        <option value="3">C</option>
+                                                                    </select>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-2">
+                                                                <label for="details_waist"
+                                                                    class="form-label">4-WAIST</label>
+                                                                <input type="text"
+                                                                    class="form-control form-control-lg"
+                                                                    id="details_waist"
+                                                                     />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="mb-2">
+                                                                <label for="details_hips"
+                                                                    class="form-label">4-HIPS</label>
+                                                                <input type="text"
+                                                                    class="form-control form-control-lg"
+                                                                    id="details_hips"
+                                                                   />
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="row px-3 mt-2">
+                                                        <button class="btn btn-dark body-measurement-submit-btn" type="submit">SUBMIT</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                  
+                    </div>
+                </div>
+            </div>
+        </xpath>
+        <xpath expr="//div[@id='o_product_terms_and_share']" position="before">
+            <div class="accordion" id="shippingDisCare">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordionShippingToNepal" aria-expanded="true"
+                            aria-controls="accordionShippingToNepal">
+                            SHIPPING TO NEPAL
+                        </button>
+                    </h2>
+                    <div id="accordionShippingToNepal" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="shipping_body">
+                                <div class="shipping-content-one">
+                                    <div>
+                                        <span>icon</span>
+                                        <span>Delivery</span>
+                                    </div>
+                                    <div class="shipping-items">
+                                        <p>Express shipping abailable</p>
+                                        <p>Estimated delivery time: 5-11 business day</p>
+                                    </div>
+
+                                </div>
+                                <div class="shipping-content-two">
+                                    <span>icon</span>
+                                    <span>Return Policy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#accordionProductDesc"
+                            aria-expanded="false" aria-controls="accordionProductDesc">
+                            PRODUCT DESCRIPTIONS
+                        </button>
+                    </h2>
+                    <div id="accordionProductDesc" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="product-descriptions-content">
+                                <h6>Style Deets</h6>
+                                <ul>
+                                    <li>Fit Type: Oversized</li>
+                                    <li>Length: Regular</li>
+                                    <li>Neckline: Collar</li>
+                                </ul>
+                                <h6>Material</h6>
+                                <ul>
+                                    <li>Fit Type: Oversized</li>
+                                    <li>Length: Regular</li>
+                                    <li>Neckline: Collar</li>
+                                </ul>
+                                <h6>Design Info</h6>
+                                <ul>
+                                    <li>Fit Type: Oversized</li>
+                                    <li>Length: Regular</li>
+                                    <li>Neckline: Collar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#accordionCareInstruction"
+                            aria-expanded="false" aria-controls="accordionCareInstruction">
+                            CARE INSTRUCTION
+                        </button>
+                    </h2>
+                    <div id="accordionCareInstruction" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="care-instruction-content">
+                                <div class="content-item">do not bleach
+                                    do not bleach</div>
+                                <div class="content-item">tumble dry with low heat
+                                    tumble dry with low heat</div>
+                                <div class="content-item">iron on low heat
+                                    iron on low heat</div>
+                                <div class="content-item">machine wash with cold water
+                                    machine wash with cold water</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

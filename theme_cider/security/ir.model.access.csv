@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_theme_cider_theme_cider,theme_cider.theme_cider,model_theme_cider_theme_cider,base.group_user,1,1,1,1

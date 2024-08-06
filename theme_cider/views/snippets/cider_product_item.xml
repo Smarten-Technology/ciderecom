@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="product_inherit_item" name="Custom Products"
+    inherit_id="website_sale.products_item">
+    <xpath expr="." position='replace'>
+      <div class="product_item oe_sider_product_item">
+        <div class="card mb-3">
+          <div class="card_image">
+            <a t-att-href="product.website_url">
+              <span t-field="product.image_512"
+                t-options="{'widget': 'image','class':'cider_card_image'}"
+              />
+              <!-- <t t-foreach="product.product_variant_ids" t-as="variant">
+                <span t-field="variant.image_512"
+                   t-options="{'widget': 'image','class':'cider_card_image'}"
+                 /> 
+              </t> -->
+            </a>
+            <div class="overlay_rating">
+              <div class="c_rating">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14"
+                    fill="none">
+                    <path
+                      d="M7.84367 0L9.51895 5.156H14.9403L10.5543 8.34258L12.2296 13.4986L7.84367 10.312L3.45771 13.4986L5.133 8.34258L0.747044 5.156H6.16838L7.84367 0Z"
+                      fill="#FFCC00" />
+                  </svg>
+                </span>
+                <span> 4.2</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="product_name">
+              <a t-att-href="product.website_url">
+                <h6 t-field="product.name"></h6>
+              </a>
+            </div>
+            <div class="product_price text-nowrap">
+              <div class="price">
+                <span t-field="product.list_price"
+                  t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
+                  class="p_price"></span>
+                <span t-field="product.compare_list_price"
+                  t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
+                  class="d_price"></span>
+              </div>
+            </div>
+            <!-- <t t-foreach="product.attribute_line_ids" t-as="att">
+              <t t-if="att.display_name=='Colors'">
+                <div class="product_color_variant">
+                  <t t-foreach="att.product_template_value_ids" t-as="val">
+                    <div t-attf-class="color_item color_v_#{val.name}"
+                      t-attf-style="background-color: #{  val.html_color}"/>
+                  </t>
+                </div>
+              </t>
+            </t> -->
+            <t>
+                <div class="product_color_variant">
+                    <div t-att-data-img="swatch['preview_image']" t-foreach="product._get_product_preview_swatches()" t-as="swatch" t-attf-class="color_item color_v_#{swatch['name']}"
+                      t-attf-style="background-color: #{swatch['value']}"/>
+                </div>
+            </t>
+          </div>
+          <div class="overlay_popup">
+            <div class="o_wsale_product_btn">
+              <!-- <span>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </span> -->
+            </div>
+            <div class="for_wishlist">
+              <t t-set="in_wish" t-value="product in products_in_wishlist"/>
+              <t t-set="product_variant_id" t-value="in_wish or product._get_first_possible_variant_id()"/>
+              <span t-if="product_variant_id" type="button" role="button" class="btn btn-outline-primary bg-white o_add_wishlist" t-att-disabled="in_wish or None" title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product.product_variant_id.id" data-action="o_wishlist">
+                  <!-- <span class="fa fa-heart" role="img" aria-label="Add to wishlist"/> -->
+                  <i class="fa fa-heart" aria-hidden="true"  aria-label="Add to wishlist"></i>
+              </span>
+              <!-- <span>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </span> -->
+            </div>
+            <div class="for_details">
+              <a t-att-href="product.website_url">
+                <span class="eye_icon">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                </span>
+              </a>
+            </div>
+            <!-- <div>
+              <span>
+                <i class="fa fa-arrows-h" aria-hidden="true"></i>
+              </span>
+            </div> -->
+          </div>
+          <div class="overlay_cart p-0">
+            <div class="p_cart">
+              <div class="js_add_cart" t-att-data-product="product.product_variant_id.id">
+                <span>
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </span>
+                <span>Add to Cart</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </xpath>
+  </template>
+
+</odoo>

@@ -1,0 +1,135 @@
+// products page aside
+#products_grid_before {
+  .o_wsale_products_grid_before_rail {
+    .products_categories {
+      .wsale_products_categories_list {
+        ul {
+          li {
+            .form-check {
+              input {
+                border-radius: 0;
+                background: transparent;
+                border: 1px solid #555;
+                &:checked {
+                  background-image: url("/theme_cider/static/src/images/icons/check-square-fill.svg");
+                  background-size: contain;
+                  background-position: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .products_attributes_filters {
+      form {
+        .accordion-item {
+          .flex-column {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 10px;
+            flex-wrap: wrap;
+
+            .form-check {
+              position: relative;
+              border: 1px solid gray;
+              padding: 15px 25px;
+              border-radius: 20px;
+              overflow: hidden;
+
+              input {
+                position: absolute;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 0;
+                opacity: 0;
+                background: none;
+                border: 0;
+                height: 0;
+                width: 0;
+
+                &:checked {
+                  background: rgb(219, 212, 212);
+                  opacity: 1;
+                  height: 200%;
+                  width: 200%;
+                }
+              }
+              label {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#cider_categories_lists_item {
+  .accordion-item {
+    border: none;
+    .accordion-header {
+      button {
+        background: none;
+        position: relative;
+        box-shadow: none;
+        padding-left: 0;
+        padding-right: 0;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          border-bottom: 2px solid #333;
+          box-shadow: none;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    .accordion-body {
+      padding: 1rem 0rem !important;
+      .accordion-body-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+        .form-check {
+          position: relative;
+          padding: 0;
+
+          label {
+            position: relative;
+            input {
+              display: none;
+              &:checked + span {
+                box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+                border: 0.5px solid black;
+                background-color: whitesmoke;
+              }
+            }
+            span {
+              border: 0.5px solid gray;
+              position: relative;
+              display: inline-block;
+              padding: 10px 18px;
+              &:hover {
+                background-color: whitesmoke;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

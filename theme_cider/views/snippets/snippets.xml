@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="cider_snippts" name="snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']" position="before">
+            <div id="ciderhomepage" class="o_panel">
+                <div class="o_panel_header">homepage</div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_cider.hp_banner" string="Banner"  t-thumbnail="/website/static/src/img/snippets_thumbs/s_banner.svg"> </t>
+                    <t t-snippet="theme_cider.hp_promo_banner" string="Promo banner"  t-thumbnail="/website/static/src/img/snippets_thumbs/s_banner.svg"> </t>
+                    <t t-snippet="theme_cider.hp_pickamood" string="Pick a Mood"  t-thumbnail="/theme_cider/static/src/images/snippets_icons/text-image.jpeg"> </t>
+                    <t t-snippet="theme_cider.hp_text_carousel" string="text Carousel"  t-thumbnail="/theme_cider/static/src/images/snippets_icons/text-carousel.jpeg"> </t>
+                    <t t-snippet="theme_cider.gallery" string="Gallery"  t-thumbnail="/theme_cider/static/src/images/snippets_icons/gallery.jpeg"> </t>
+                    <t t-snippet="theme_cider.cidergangcarousel" string="group carousel"  t-thumbnail="/theme_cider/static/src/images/snippets_icons/textcarousel.jpeg"> </t>
+                    <t t-snippet="theme_cider.hp_aboutcider" string="aboutcider"  t-thumbnail="/website/static/src/img/snippets_thumbs/s_banner.svg"> </t>
+                    <t t-snippet="theme_cider.hp_future" string="future"  t-thumbnail="/theme_cider/static/src/images/snippets_icons/infosection.jpeg"> </t>
+                    <t t-snippet="theme_cider.hp_latestcider_scoop" string="Latest Scoop" t-thumbnail="/theme_cider/static/src/images/snippets_icons/blogs.jpeg"> </t>
+                    <t t-snippet="theme_cider.bottommodalnav" string="bottom modal nav" t-thumbnail="/website/static/src/img/snippets_thumbs/s_banner.svg"> </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

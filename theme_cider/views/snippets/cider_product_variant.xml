@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="variants_desc" inherit_id="website_sale.variants">
+        <xpath expr="//strong[@t-field='ptal.attribute_id.name']" position="replace">
+            <strong class="attribute_name">
+                Color / Size 
+            </strong>
+        </xpath>
+  
+    </template>
+</odoo>

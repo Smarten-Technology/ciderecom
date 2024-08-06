@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="hp_pickamood" name="template_name">
+        <section>
+            <div class="grid_image">
+                <h3 class="text-center mb-3">PICK A MOOD</h3>
+                <div class="all_grid_image">
+                    <div class="image_item">
+                        <a href="/">
+                            <img src="/theme_cider/static/src/images/flexone.jpeg" alt="" />
+                        </a>
+                    </div>
+                    <div class="image_item">
+                        <a href="/">
+                            <img src="/theme_cider/static/src/images/flextwo.jpeg" alt="" />
+                        </a>
+                    </div>
+                    <div class="image_item">
+                        <a href="/">
+                            <img src="/theme_cider/static/src/images/flexthree.jpeg" alt="" />
+                        </a>
+                    </div>
+                    <div class="image_item">
+                        <a href="/">
+                            <img src="/theme_cider/static/src/images/flexfour.jpeg" alt="" />
+                        </a>
+                    </div>
+                    <div class="image_item">
+                        <a href="/">
+                            <img src="/theme_cider/static/src/images/flexfive.jpeg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

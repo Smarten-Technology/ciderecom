@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="hp_promo_banner" name="promo banner">
+        <section>
+            <div class="banner_two d-sm-block d-none">
+                <a href="/">
+                    <img src="/theme_cider/static/src/images/hometwo.jpeg " alt="" />
+                </a>
+            </div>
+            <div class="mobile_banner_two d-sm-none d-block">
+                <a href="/">
+                    <img src="/theme_cider/static/src/images/homepage/gallery/mobile_banner_tw0.jpeg" alt="" />
+                </a>
+            </div>
+        </section>
+    </template>
+
+</odoo>

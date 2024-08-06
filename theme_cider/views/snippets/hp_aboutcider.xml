@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="hp_aboutcider" name="homepage aboutcider">
+        <section class="hp_aboutcider">
+            <div class="container pb-3">
+                <h3 class="text-center mb-3">ABOUT CIDER</h3>
+                <div class="wrapper mb-3">
+                    <div class="box">
+                        <div></div> Cider was founded in 2020 by four friends who wanted to build a fashion brand that celebrates happiness in the mundane. Like the drink we're named after, Cider is bubbly, sweet, and has just the right amount of attitude. It's also perfect for fun gatherings, like sipping cider with your besties at a neighborhood bar or just lounging at home. That's why we like to think of ourselves as your closet's happy hour. Ready to hang with us?
+                        Learn more</div>
+                </div>
+             <p class="text-center">  <a href="" >Learn more</a></p>
+            </div>
+        </section>
+    </template>
+</odoo>

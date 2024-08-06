@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippet_options_1" inherit_id="website.snippet_options" name="Airproof - Mega Menu Options">
+        <xpath expr="//div[@data-js='MegaMenuLayout']/we-select/we-button[last()]" position="before">
+            <t t-set="_label">Airproof</t>
+            <we-button t-att-data-select-label="_label" data-select-template="theme_cider.cider_mega_menu_one" data-img="/theme_cider/static/src/images/snippets_icons/ciderheader.jpeg" t-out="_label"/>
+            <!-- <we-button t-att-data-select-label="_label"
+                data-select-template="theme_cider.cider_mega_menu_one"
+                data-img="/theme_cider/static/src/images/snippets_icons/ciderheader.jpeg"
+                t-out="_label"/> -->
+        </xpath>
+    </template>
+</odoo>

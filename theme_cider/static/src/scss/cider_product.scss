@@ -1,0 +1,408 @@
+#product_details {
+  h1[itemprop="name"] {
+    margin-top: 0px auto;
+  }
+  form[method="POST"] {
+    .js_product {
+      div {
+        .product_price {
+          span {
+            font-size: 22px;
+            color: black;
+          }
+        }
+      }
+    }
+
+    ul {
+      .variant_attribute .attribute_name:after {
+        display: none;
+      }
+
+      li[data-attribute_display_type="pills"] {
+        ul[data-bs-toggle="buttons"] {
+          li {
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 14px !important;
+            padding: 3px 18px 5px 14px;
+            text-transform: uppercase;
+            font-size: 16px;
+
+            &:hover {
+              background-color: whitesmoke;
+              border: 1px solid black;
+            }
+          }
+        }
+        li.o_variant_pills.btn.active {
+          border: 1px solid black;
+        }
+      }
+    }
+    del {
+      text-decoration: none;
+      span[data-oe-type="monetary"] {
+        span {
+          font-size: 14px;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}
+
+div[itemscope="itemscope"] {
+  h3 {
+    span {
+      font-size: 18px;
+    }
+  }
+}
+.cider_product_btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  a {
+    padding: 8px 22px;
+    border: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+  .sizeandmodalbtn {
+    background-color: whitesmoke;
+  }
+  .body_measurements {
+    background-color: #cfc4c4;
+  }
+}
+
+// modal on product page
+#productSizeModel {
+  .modal-header {
+    button.btn-close {
+      border: 0.5px solid gray;
+    }
+  }
+  .modal-body {
+    .size_helping{
+      .model_information{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          gap: 1px;
+  
+          .m_details{
+              border: .5px solid gray;
+              .title{
+                  background: #000;
+                  color: #fff;
+                  text-align: center;
+                  padding: 10px 0px;
+                  font-weight: 200;
+              }
+              .m_content{
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  background-color: #f5f5f5;
+                  min-height: 60px;
+                  align-items: center;
+                  img{
+                      height: 40px;
+                      width: 40px;
+                      border-radius: 50%;
+                      overflow: hidden;
+                      border: .5px solid gray;
+                  }
+                  span{
+                      height: 40px;
+                      display: flex;
+                      align-items: center;
+                      padding: 26px 0px;
+                 
+                  }
+              }
+          
+          }
+      }
+  
+      .fit_type{
+          hr{
+              margin: .5rem;
+          }
+          background-color: whitesmoke;
+          .fit_type_name{
+              padding: 0px 10px;
+              display: flex;
+              justify-content: space-between;
+              span{
+                  position: relative;
+                  &.active{
+                      position: relative;
+                      &::before{
+                          display: block;
+                          position: absolute;
+                          content: "";
+                          left: 0;
+                          top: -11px;
+                          border-top: 5px solid black;
+                          width: 100%;
+                          height: 100%;
+                      }
+                 }
+              }
+          }
+      }
+      .stretch{
+          hr{
+              margin: .5rem;
+          }
+          background-color: whitesmoke;
+          .stretch_name{
+              padding: 0px 10px;
+              display: flex;
+              justify-content: space-between;
+              span{
+                  position: relative;
+                  &.active{
+                      position: relative;
+                      &::before{
+                          display: block;
+                          position: absolute;
+                          content: "";
+                          left: 0;
+                          top: -11px;
+                          border-top: 5px solid black;
+                          width: 100%;
+                          height: 100%;
+                      }
+                 }
+              }
+          }
+      }
+      .measurement-table{
+          #measurementTable{
+              position: relative;
+              li{
+                  button{
+                      border: none;
+                      font-weight: 400;
+                      color: #000;
+                      &.active{
+                          border-bottom: 5px solid black;
+                          font-weight: 600;
+                      }
+                  }
+              }
+              .for_button{
+                  position: absolute;
+                  top: 0;
+                  height: 100%;
+                  right: 5%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  .form-check-input[type=checkbox]{
+                      box-shadow: none;
+                      // // border: black;
+                      // background-color: #333;
+                      border-color: #333;
+                  }
+                  .form-check-input{
+                      &:checked{
+                          background-color: #333;
+                          border-color: #333;
+                      }
+                  }
+              }
+          }
+          #measurementTableContent{
+              #body-size-tab-pane{
+                  .body_size_content{
+                      table{
+                          thead{
+                              tr{
+                                  th{
+                                      background-color: #000;
+                                      color: white;
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+              #product-size-tab-pane{
+                  .body_size_content{
+                      table{
+                          thead{
+                              tr{
+                                  th{
+                                      background-color: #000;
+                                      color: white;
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+          .h_info{
+              font-size: 12px;
+              color: rgb(205, 197, 197);
+          }
+      }
+      .measure_your_body{
+        .for_image{
+          width: 100%;
+          aspect-ratio: 8/4;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+  }
+  }
+  .modal-footer {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+#productbodymeasurement {
+  .modal-body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+
+    &::-webkit-scrollbar{
+      display: none;
+      -ms-overflow-style: none; 
+      scrollbar-width: none;  
+    
+    }
+    .modal_measurement {
+      height: 75vh;
+      .mm_image {
+        width: 100%;
+        aspect-ratio: 3 / 5;
+        img {
+          width: 100% !important;
+          height: 100%;
+          object-fit: fill;
+          object-position: center;
+        }
+      }
+      .main-body {
+        .switch-button {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 15px;
+
+          input {
+            &:checked {
+              // background-color: white;
+              // --bs-form-switch-bg: none;
+              --bs-form-switch-bg: url(
+                data:image/svg + xml,
+                %3csvgxmlns="http://www.w3.org/2000/svg"viewBox="-4 -4 8 8"%3e%3ccircler="3"fill="rgba%280, 0, 0, 0.25%29"/%3e%3c/svg%3e
+              );
+            }
+          }
+        }
+        .all_details_input {
+          label {
+            font-weight: 600;
+          }
+
+          input {
+            border-radius: 0;
+            &:focus {
+              box-shadow: none;
+              border-color: black;
+            }
+            &::placeholder {
+              font-size: 12px;
+            }
+            &:hover {
+              border-color: black;
+            }
+          }
+          select {
+            border-radius: 0;
+            font-size: 16px;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+          button{
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+#shippingDisCare {
+  .accordion-item {
+    border: 0;
+  }
+  .accordion-button {
+    padding-left: 0;
+    &.collapsed {
+      border-color: white !important;
+      background-color: white;
+      box-shadow: none;
+    }
+    &[aria-expanded="true"] {
+      border-color: white !important;
+      background-color: white;
+      box-shadow: none;
+    }
+  }
+  .accordion-body {
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+  .accordion-body:focus-visible {
+    outline: none !important;
+  }
+}
+
+#o_product_terms_and_share {
+  display: none !important;
+}
+
+// product details page side images EXTRA PRODUCT MEDIA
+.o_carousel_product_indicators {
+  padding-top: 20px;
+  ol {
+    height: fit-content;
+    list-style-type: square;
+
+    li {
+      height: 90px !important;
+      div {
+        height: 100% !important;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: fill;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
+// .variant_custom_value{
+//   display: none;
+// }

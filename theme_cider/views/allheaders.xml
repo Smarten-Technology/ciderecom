@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="template_header_opt" inherit_id="website.snippet_options"
+            name="Header Template - Option">
+            <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+                <we-button title="cider header"
+                    data-customize-website-views="theme_cider.ciderheader"
+                    data-customize-website-variable="'cider header'"
+                    data-img="/theme_cider/static/src/images/snippets_icons/ciderheader.jpeg" />                
+                <we-button title="cider header two"
+                    data-customize-website-views="theme_cider.ciderheader_two"
+                    data-customize-website-variable="'cider header two'"
+                    data-img="/theme_cider/static/src/images/snippets_icons/ciderheader.jpeg" />                
+            </xpath>
+        </template>
+</odoo>

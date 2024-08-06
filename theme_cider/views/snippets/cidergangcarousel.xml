@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="cidergangcarousel" name="cidergang carousel">
+        <section class="cidergang_carousel">
+            <div class="container">
+              <h3 class="text-center">FROM OUR #CIDERGANG</h3>
+              <div class="owl-carousel owl-theme owl-carousel-cidergang">
+                <div class="item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, deleniti.</p>
+                  <span>@helloname</span>
+                </div>
+                <div class="item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, deleniti.</p>
+                  <span>@helloname</span>
+                </div>
+                <div class="item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, deleniti.</p>
+                  <span>@helloname</span>
+                </div>
+                <div class="item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, deleniti.</p>
+                  <span>@helloname</span>
+                </div>
+                <div class="item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, deleniti.</p>
+                  <span>@helloname</span>
+                </div>
+                <div class="item">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, deleniti.</p>
+                  <span>@helloname</span>
+                </div>
+                <div class="item">
+                  <h4>7</h4>
+                </div>
+                <div class="item">
+                  <h4>8</h4>
+                </div>
+                <div class="item">
+                  <h4>9</h4>
+                </div>
+                <div class="item">
+                  <h4>10</h4>
+                </div>
+              </div>
+            </div>
+          </section>
+    </template>
+</odoo>

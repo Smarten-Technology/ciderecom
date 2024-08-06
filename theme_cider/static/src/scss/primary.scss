@@ -1,0 +1,44 @@
+$o-color-1: #333;
+$o-color-2: #da7070;
+$o-color-3: #e4f3f7;
+$o-color-4: #311717;
+$o-color-5: #6288e8;
+
+$text-color-1:  #111;
+$text-color-2:  #333;
+$text-color-3:  #666;
+
+$o-border-color: #DEE2E6;
+$o-border-color2: #DEE2E6;
+
+$primary-color: #444;
+$secondary-color: #111;
+$primary-text-color: #555;
+
+    
+
+h1,h2,h3,h4.h5,h6
+{
+font-weight: 700;
+}
+p,span{
+    font-weight: 400;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-size: 16px;
+    height: 100%;
+    min-height: 100vh;
+}
+
+header .topheader .right_icons a.cart_notification .header_cart_icon svg{
+    position: relative;
+    color: $secondary-color;
+}
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="hp_future" name="homepage future">
+        <section class="future_in_mind">
+                <div class="row justify-content-end g-0">
+                    <div class="col-lg-8 col-md-8 col-11 g-0">
+                        <div class="future py-5">
+                            <a href=""><h3>with the future in Mind</h3></a>
+                            <div class="content">
+                           <a href="">     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+                            minus commodi voluptas tenetur, mo Lorem
+                            ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit.
+                            Tempore, minus commodi voluptas tenetur, mo elit. Tempore, minus
+                            commodi voluptas tenetur, modi fuga
+                            molestiae et odio repellendus eos quia excepturi placeat saepe,
+                            culpa cumque libero beatae aliquam nam.</a>
+                            </div>
+                            <p>
+                                <a href="">Learn more</a>
+                            </p>
+                            <div class="group_images">
+                                <div class="item_image">
+                                  <a href=""> <img src="theme_cider/static/src/images/one_png01.webp" alt="" /></a>
+                                </div>
+                                <div class="item_image">
+                                      <a href="">  <img src="theme_cider/static/src/images/one_png02.webp" alt="" /></a>
+                                </div>
+                                <div class="item_image">
+                                      <a href="">  <img src="theme_cider/static/src/images/one_png03.webp" alt="" /></a>
+                                </div>
+                                <div class="item_image">
+                                      <a href="">  <img src="theme_cider/static/src/images/one_png04.webp" alt="" /></a>
+                                </div>
+                                <div class="item_image">
+                                      <a href="">  <img src="theme_cider/static/src/images/one_png05.webp" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </template>
+
+</odoo>

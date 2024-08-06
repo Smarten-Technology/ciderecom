@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="hp_latestcider_scoop" name="template_name">
+        <section class="latest_cider_scoop py-5">
+            <div class="scoop_header mb-3">
+                <h3 class="text-center">GET THE LATEST CIDER SCOOP</h3>
+                <a href="" class="d-md-block d-none">Read more</a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-3">
+                        <a href="" class="linkall">
+                            <div class="content">
+                                <div class="for_image">
+                                    <img src="theme_cider/static/src/images/lcs_img.webp" alt="" />
+                                </div>
+                                <h6>Icons Only: Summer '24</h6>
+                                <p class="ellispsis">Lorem ipsum dolor sit amet conse Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Libero eligendi
+                                    quod quisquam? ctetur adipisicing elit. Totam, magnam.</p>
+                                <span class="mini_text">May 13, 2024 — 3 min read</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-3">
+                        <a href="" class="linkall">
+                            <div class="content">
+                                <div class="for_image">
+                                    <img src="theme_cider/static/src/images/lcs_img02.webp" alt="" />
+                                </div>
+                                <h6>Icons Only: Summer '24</h6>
+                                <p class="ellispsis">Lorem ipsum dolor sit amet conse Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Libero eligendi
+                                    quod quisquam? ctetur adipisicing elit. Totam, magnam.</p>
+                                <span class="mini_text">May 13, 2024 — 3 min read</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-3">
+                        <a href="" class="linkall">
+                            <div class="content">
+                                <div class="for_image">
+                                    <img src="theme_cider/static/src/images/lcs_img03.webp" alt="" />
+                                </div>
+                                <h6>Icons Only: Summer '24</h6>
+                                <p class="ellispsis">Lorem ipsum dolor sit amet conse Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit. Libero eligendi
+                                    quod quisquam? ctetur adipisicing elit. Totam, magnam.</p>
+                                <span class="mini_text">May 13, 2024 — 3 min read</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container d-md-none d-block">
+                <div class="w-100 d-flex justify-content-end">
+                 <a href="" class="text-decoration-underline">Read more</a>
+                </div>
+               </div>
+        </section>
+
+    </template>
+
+</odoo>

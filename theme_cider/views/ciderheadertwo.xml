@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="ciderheader_two" inherit_id="website.layout" name="Header Template - Option"
+    active="False">
+    <xpath expr="//header//nav" position="replace">
+      <t t-call="website.navbar">
+        <t t-set="_navbar_classes" t-valuef="shadow-sm ciderheader_two d-lg-block d-none p-0" />
+        <div class="pre_header">
+          <a href="" class="mx-auto">
+            <h6 class="promo_text">Special Offer: Up tp 60%, Shop Here &gt;&gt;</h6>
+          </a>
+          <span class="pre_header_hbtn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="topheader">
+          <div class="left_icons">
+            <a href="/" class="nav_show_one">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-globe" viewBox="0 0 16 16">
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+              </svg>
+            </a>
+            <a href="/" class="nav_show_two">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-headset" viewBox="0 0 16 16">
+                <path
+                  d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+              </svg>
+            </a>
+            <a href="/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+              </svg>
+            </a>
+          </div>
+          <div class="logo">
+            <t t-call="website.placeholder_header_brand">
+              <t t-set="_link_class" t-valuef="logo_img" />
+            </t>
+          </div>
+          <div class="right_icons">
+
+           <!-- <div class="for_search_nav">
+            <t t-call="website.placeholder_header_search_box">
+              <t t-set="_layout" t-valuef="modal"/>
+              <t t-set="_input_classes" t-valuef="border border-end-0 p-3 hello_input"/>
+              <t t-set="_submit_classes" t-valuef="border border-start-0 px-4 bg-o-color-4 hello_submit"/>
+              <t t-set="_button_classes" t-valuef="o_navlink_background text-reset hello_button"/>
+              </t>
+           </div>
+             -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" placeholder="Search"
+                aria-label="Search" readonly="readonly" type="button" data-bs-toggle="modal"
+                data-bs-target="#navSearch" />
+              <button  aria-label="Search" readonly="readonly" type="button" data-bs-toggle="modal"
+              data-bs-target="#navSearch" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+              </button>
+            </form>
+
+            <t name="Header Wishlist Link" t-name="website_sale_wishlist.header_wishlist_link">
+              <t t-nocache="The wishlist may vary and depends on the user." t-nocache-_icon="_icon" t-nocache-_item_class="_item_class" t-nocache-_link_class="_link_class" t-nocache-_badge_class="_badge_class" t-nocache-_icon_wrap_class="_icon_wrap_class" t-nocache-_text_class="_text_class" t-nocache-_text="_text">
+                  <t t-set="wishcount" t-value="len(request.env['product.wishlist'].current())"/>
+                  <t t-set="show_wishes" t-value="wishcount and wishcount>0"/>
+                  <li t-attf-class="o_wsale_my_wish #{not show_wishes and 'd-none'} #{_item_class}">
+                      <a href="/shop/wishlist" t-attf-class="wishlist_link">
+                          <div t-attf-class="wishlist_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                          </svg>
+                              <sup t-esc="wishcount" t-attf-class="my_wish_quantity o_animate_blink badge text-bg-primary #{_badge_class}"/>
+                          </div>
+                          <span t-if="_text" t-attf-class="#{_text_class}">Wishlist</span>
+                      </a>
+                  </li>
+              </t>
+          </t>
+            <!-- <a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-heart" viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+              </svg>
+            </a> -->
+            <t name="Header Cart Link" t-name="website_sale.header_cart_link">
+              <t t-nocache="The number of products is dynamic, this rendering cannot be cached." t-nocache-_icon="_icon" t-nocache-_text="_text" t-nocache-_badge="_badge" t-nocache-_badge_class="_badge_class" t-nocache-_icon_wrap_class="_icon_wrap_class" t-nocache-_text_class="_text_class" t-nocache-_item_class="_item_class" t-nocache-_link_class="_link_class">
+                  <t t-set="website_sale_cart_quantity" t-value="request.session['website_sale_cart_quantity'] if 'website_sale_cart_quantity' in request.session else website.sale_get_order().cart_quantity or 0"/>
+                  <t t-set="show_cart" t-value="true"/>
+                  <li t-attf-class="#{_item_class} divider d-none"/>
+                  <li t-attf-class="o_wsale_my_cart #{not show_cart and 'd-none'} #{_item_class}">
+                      <a href="/shop/cart" t-attf-class="cart_notification" aria-label="eCommerce cart">
+                          <div t-attf-class="#{_icon_wrap_class} header_cart_icon">
+                            <span class="cart_icon"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                              </svg>
+                            </span>
+                              <!-- <i t-if="_icon" class="fa fa-shopping-cart fa-stack"/> -->
+                              <sup t-attf-class="my_cart_quantity badge text-bg-primary #{_badge_class} #{'d-none' if (website_sale_cart_quantity == 0) else ''}" t-esc="website_sale_cart_quantity" t-att-data-order-id="request.session.get('sale_order_id', '')"/>
+                          </div>
+                          <!-- <span t-if="_text" t-attf-class="#{_text_class}">My Cart</span> -->
+                      </a>
+                  </li>
+              </t>
+            </t>
+
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="ciderNavbar">
+          <div id="o_main_nav" class="collapse navbar-collapse o_main_nav py-1 cider_nav">
+            <div class="left_icons_down">
+              <a href="/" class="nav_show_one">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-globe" viewBox="0 0 16 16">
+                  <path
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                </svg>
+              </a>
+              <a href="/" class="nav_show_two">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-headset" viewBox="0 0 16 16">
+                  <path
+                    d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+                </svg>
+              </a>
+            </div>
+            <!-- Navbar -->
+            <t t-call="website.navbar_nav">
+              <t t-set="_nav_class" t-valuef="cider_navbar_nav" />
+              <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                <t t-call="website.submenu">
+                  <t t-set="item_class" t-valuef="nav-item" />
+                  <t t-set="link_class" t-valuef="nav-link" />
+                </t>
+              </t>
+            </t>
+
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade modal-fullscreen py-0" id="navSearch" data-bs-backdrop="static"
+          data-bs-keyboard="false" tabindex="-1" aria-labelledby="navSearchLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen py-0">
+            <div class="modal-content">
+              <div class="modal-header p-0">
+                <div class="container d-flex py-3">
+                  <div class=" w-100 row justify-content-center">
+                    <div class="col-sm-9 d-flex hr_line pt-5 px-0">
+                      <div class="for_search_nav">
+                        <t t-call="website.placeholder_header_search_box">
+                            <t t-set="_classes" t-valuef="mb-3"/>
+                            <t t-set="_input_classes" t-valuef="rounded-start-pill text-bg-light ps-3"/>
+                            <t t-set="_submit_classes" t-valuef="rounded-end-pill bg-o-color-3 pe-3"/>
+                            <t t-set="limit" t-valuef="0"/>
+                        </t>
+                       </div>
+                      <!-- <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                          fill="currentColor"
+                          class="bi bi-search" viewBox="0 0 16 16">
+                          <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                      </button>
+                      <input class="form-control me-2" type="search"
+                        placeholder="Looking for something ?" aria-label="Search" /> -->
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-sm-9 px-0">
+                      <div class="recent_search_content mb-4">
+                        <div class="recent_search d-flex mb-3">
+                          <h6 class="me-2 mb-0">Recent Search</h6>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                            <path
+                              d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                          </svg>
+                        </div>
+                        <div class="recent_search_items d-flex nowrap gap-3">
+                          <div class="recent_search_item">
+                            <a href="">
+                              <span class="me-2">hello</span>
+                            </a>
+                            <span class="cross">
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                          <div class="recent_search_item">
+                            <a href="">
+                              <span class="me-2">how are you</span>
+                            </a>
+                            <span class="cross">
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="nav_trending mb-4">
+                        <h6 class="pb-3">Trending</h6>
+                        <div class="nav_trending_items">
+                          <a href="" class="nav_trending_item">
+                            <span>Modern Mariner⚓️</span>
+                          </a>
+                          <a href="" class="nav_trending_item">
+                            <span>Iridescent Evenings</span>
+                          </a>
+                          <a href="" class="nav_trending_item">
+                            <span>Seen on TikTok 🎬</span>
+                          </a>
+                          <a href="" class="nav_trending_item">
+                            <span>Sporty by Cider 🎾</span>
+                          </a>
+                          <a href="" class="nav_trending_item">
+                            <span>Hair Accessories 🎀</span>
+                          </a>
+                          <a href="" class="nav_trending_item">
+                            <span>Leopard Print</span>
+                          </a>
+                          <a href="" class="nav_trending_item">
+                            <span>Wedding Guest</span>
+                          </a>
+                          <a href="" class="nav_trending_item">
+                            <span>Beach Staples</span>
+                          </a>
+                          <a href="" class="nav_trending_item">
+                            <span>Graduation Dresses</span>
+                          </a>
+                          <a href="" class="nav_trending_item">
+                            <span>Tank Tops &amp; Camis</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </t>
+      <t t-call="theme_cider.cider_header_mobile"/>
+    </xpath>
+  </template>
+</odoo>

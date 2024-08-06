@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="cider_category_1" inherit_id="website_sale.products">
+        <xpath expr="//div[contains(@class, 'products_attributes_filters')]" position="after">
+            <div class="accordion pb-5" id="cider_categories_lists_item">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#categories_length" aria-expanded="true"
+                            aria-controls="categories_length">
+                            LENGTH
+                        </button>
+                    </h2>
+                    <div id="categories_length" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="accordion-body-content">
+                                <div class="form-check">
+                                    <label class="form-check-label" for="c_length_crop">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_length_crop" />
+                                        <span>Crop</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+
+                                    <label class="form-check-label" for="c_length_long">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_length_long" />
+                                        <span>
+                                            Long</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="c_length_regular">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_length_regular" />
+                                        <span>Regular</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#c_categories_sleeve_length" aria-expanded="false"
+                            aria-controls="c_categories_sleeve_length">
+                            SLEEVE LENGTH
+                        </button>
+                    </h2>
+                    <div id="c_categories_sleeve_length" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="accordion-body-content">
+                                <div class="form-check">
+                                    <label class="form-check-label" for="c_sleeve_length_long">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_sleeve_length_long" />
+                                        <span>Long Sleeve</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+
+                                    <label class="form-check-label"
+                                        for="c_sleeve_length_middle_sleeve">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_sleeve_length_middle_sleeve" />
+                                        <span>
+                                            Middle Sleeve</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label"
+                                        for="c_sleeve_length_short_sleeve">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_sleeve_length_short_sleeve" />
+                                        <span>Short Sleeve</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="c_sleeve_length_sleeveless">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_sleeve_length_sleeveless" />
+                                        <span>Sleeveless</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#c_categories_dresses_length" aria-expanded="false"
+                            aria-controls="c_categories_dresses_length">
+                            DRESSES LENGTH
+                        </button>
+                    </h2>
+                    <div id="c_categories_dresses_length" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="accordion-body-content">
+                                <div class="form-check">
+                                    <label class="form-check-label" for="c_dresses_length_maxi">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_dresses_length_maxi" />
+                                        <span>Maxi</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+
+                                    <label class="form-check-label" for="c_dresses_length_midi">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_dresses_length_midi" />
+                                        <span>
+                                            Midi</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="c_dresses_length_short">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="c_dresses_length_short" />
+                                        <span>Short</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

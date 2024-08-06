@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="hp_text_carousel" name="text carousel">
+        <section>
+            <div class="homepage_carousel container">
+                <h3 class="text-center mb-3">WE MAKE NEWS</h3>
+                <div id="carouselWeMakeNews" class="carousel " data-bs-ride="true">
+                    <ul class="carousel-indicators">
+                      <li  data-bs-target="#carouselWeMakeNews" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-image: url(theme_cider/static/src/images/glamour.webp); background-repeat: no-repeat; background-size: contain; background-position: center;"></li>
+                      <li  data-bs-target="#carouselWeMakeNews" data-bs-slide-to="1" aria-label="Slide 2" style="background-image: url(theme_cider/static/src/images/wwd.webp); background-repeat: no-repeat; background-size: contain; background-position: center;"></li>
+                      <li  data-bs-target="#carouselWeMakeNews" data-bs-slide-to="2" aria-label="Slide 3" style="background-image: url(theme_cider/static/src/images/seventeen.webp); background-repeat: no-repeat; background-size: contain; background-position: center;"></li>
+                      <li  data-bs-target="#carouselWeMakeNews" data-bs-slide-to="3" aria-label="Slide 4" style="background-image: url(theme_cider/static/src/images/teenvogue.webp); background-repeat: no-repeat; background-size: contain; background-position: center;"></li>
+                      <li  data-bs-target="#carouselWeMakeNews" data-bs-slide-to="4" aria-label="Slide 5" style="background-image: url(theme_cider/static/src/images/insider.webp); background-repeat: no-repeat; background-size: contain; background-position: center;"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="carousel_content">
+                           <div class="content_box">
+                            this is one <br></br>
+                            Warning: Setting textContent on a node removes all of the node's children and replaces them with a single text node with the given string value.
+                           </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carousel_content">
+                          <div class="content_box">
+                            this is two<br></br>
+                            Don't get confused by the differences between Node.textContent and HTMLElement.innerText. Although the names seem similar, there are important differences:
+                        </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carousel_content">
+                          <div class="content_box">  
+                            this is three
+                            <br></br>
+                            Element.innerHTML returns HTML, as its name indicates. Sometimes people use innerHTML to retrieve or write text inside an element, but textContent has better performance because its value is not parsed as HTML.
+                        </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carousel_content">
+                          <div class="content_box">
+                            this is four<br></br>
+                            The isDefaultNamespace() method of the Node interface accepts a namespace URI as an argument. It returns a boolean value that is true if the namespace is the default namespace on the given node and false if not.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="carousel_content">
+                          <div class="content_box">
+                            this is five<br></br>
+                            A boolean value that rue or false, indicating if the parameter is the default namespace, or not.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselWeMakeNews" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                      </span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselWeMakeNews" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true">
+                        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+  
+                      </span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              </div>
+        </section>
+        
+    </template>
+
+</odoo>

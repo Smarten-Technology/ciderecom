@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <template id="template_footer_opt" inherit_id="website.snippet_options"
+      name="Footer Template - Option">
+      <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+         <we-button title="footer"
+            data-customize-website-views="theme_cider.cider_footer"
+            data-customize-website-variable="'footer'"
+            data-img="/theme_cider/static/src/images/snippets_icons/ciderheader.jpeg"  />
+      </xpath>
+   </template>
+</odoo>
