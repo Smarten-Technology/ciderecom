@@ -46,7 +46,7 @@ Long description of module's purpose
          'views/snippets/test_product_page.xml',
         #  'views/snippets/cider_products_page.xml',
          'views/snippets/cider_product_item.xml',
-         'views/snippets/cider_categories_lists.xml',
+        #  'views/snippets/cider_categories_lists.xml',
                 
     ],
          "assets": {
